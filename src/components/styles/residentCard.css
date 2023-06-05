@@ -1,0 +1,54 @@
+.resident {
+    width: 60vh;
+    max-width: 380px;
+    background-color: #062226;
+    color: white;
+    border-radius: 0.8em;
+    overflow: hidden;
+    align-content: center;
+    line-height: 1em;
+    margin-bottom: 1.2em;
+}
+
+.resident__header {
+    position: relative;
+}
+
+.resident__status {
+    position: absolute;
+    top: 15%;
+    width: 40%;
+    min-width: 100px;
+    background-color: #062226;
+    padding: 0.3em 0.5em;
+    border-radius: 0 0.6em 0.6em 0;
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+.resident__circle {
+    display: block;
+    width: 15px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background-color: #ccc;
+
+}
+
+.Alive {
+    background-color: green;
+}
+
+.Dead {
+    background-color: red;
+}
+
+.rickandmorty {
+    display: grid;
+    grid-template-columns: 100vw;
+    grid-template-rows: 300px 1fr;
+    position: absolute;
+    top: 0;
+    left: 0
+}
