@@ -23,10 +23,16 @@ function App() {
 
   return (
     <div className='app'>
-      <h1>Rick and Morty App</h1>
-      <FormSearch 
-        setIdLocation={setIdLocation}
-      />
+       <header>
+    const Header = () => {
+      return (
+        <div class="rickandmorty">
+          <header style="background-image: url('./public/rick-and-morty-netflix-2020-9d.jpg');">
+            <img src="./public/tt.png" alt="rick"></img>
+          </header>
+    </div><h1>Rick and Morty App</h1>
+    <FormSearch
+        setIdLocation={setIdLocation} />
       {
         hasError
         ? <h2>❌ Hey! you must provide an from 1 to 126 🥲</h2> 
