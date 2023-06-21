@@ -23,7 +23,10 @@ const FormSearch = ({ setIdLocation }) => {
 
   return (
       <>
-      <form onSubmit={handleSubmit}>
+          {
+            inputIsEmpty && <h3>This field is required 👀</h3>
+          }
+          <form onSubmit={handleSubmit}>
         <input 
           placeholder="Enter id location"
           type="text" 
@@ -31,9 +34,6 @@ const FormSearch = ({ setIdLocation }) => {
         />
          <button>Search</button>
         </form>
-          {
-            inputIsEmpty && <h3>This field is required 👀</h3>
-          }
       </>
         
   )

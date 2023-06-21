@@ -15,24 +15,25 @@ function App() {
 
   const url =`https://rickandmortyapi.com/api/location/${idLocation}`
 
+console.log(url)
+
   const [location, getApiLocation, hasError] = useFetch(url)
 
   useEffect(() => {
+    
     getApiLocation()
   }, [idLocation])
 
   return (
     <div className='app'>
-       <header>
-    const Header = () => {
-      return (
         <div class="rickandmorty">
-          <header style="background-image: url('./public/rick-and-morty-netflix-2020-9d.jpg');">
-            <img src="./public/tt.png" alt="rick"></img>
-          </header>
-    </div><h1>Rick and Morty App</h1>
+        <div className='logoRick'>
+          <h1>Rick and Morty App</h1>
+        </div>
     <FormSearch
         setIdLocation={setIdLocation} />
+    </div>
+
       {
         hasError
         ? <h2>❌ Hey! you must provide an from 1 to 126 🥲</h2> 

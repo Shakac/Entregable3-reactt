@@ -9,7 +9,7 @@ html {
 }
 
 body {
-    margin: 9%;
+    margin: 7%;
     background-color: rgb(51, 61, 51);
     color: greenyellow;
 }
@@ -20,8 +20,12 @@ h1, h2, h3 p, ul {
 }
 
 ul {
-    padding-left: 1.3em;
-    list-style: square
+    /* padding-left: 1.6em; */
+    padding-block: 3em;
+    justify-content: center;
+    justify-items: center;
+    justify-self: start;
+    list-style: square;
 }
 
 input, button {
@@ -38,7 +42,6 @@ input {
 }
 
 img {
-   width: 100%;
-   display: flex;
+   width: 100%;   
 }
 

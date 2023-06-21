@@ -1,6 +1,6 @@
 .resident {
-    width: 60vh;
-    max-width: 380px;
+    width: 50vh;
+    max-width: 480px;
     background-color: #062226;
     color: white;
     border-radius: 0.8em;
@@ -8,6 +8,7 @@
     align-content: center;
     line-height: 1em;
     margin-bottom: 1.2em;
+    margin: 2%;
 }
 
 .resident__header {
@@ -44,11 +45,3 @@
     background-color: red;
 }
 
-.rickandmorty {
-    display: grid;
-    grid-template-columns: 100vw;
-    grid-template-rows: 300px 1fr;
-    position: absolute;
-    top: 0;
-    left: 0
-}

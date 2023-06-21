@@ -1,4 +1,33 @@
 .container {
     align-items: center;
     align-content: center;
+    
+}
+
+.rickandmorty {
+    background-image: url("../src/imagen/rick-and-morty-netflix.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    height: 180px;
+}
+
+.rickandmorty{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 20em;
+}
+
+.logoRick{
+    background-image: url("../public/tt.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 70em;
+}
+
+.resident-container{
+   display: flex;
+   flex-wrap: wrap;
 }
