@@ -10,7 +10,7 @@ const ResidentCard = ({ url }) => {
         getApiResident()
     }, [])
 
-    console.log(resident);
+    
 
   return (
     <article className='resident'>
