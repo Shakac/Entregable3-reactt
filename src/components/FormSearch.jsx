@@ -3,39 +3,38 @@ import getRandomNumber from "../utils/getRandomNumber"
 
 const FormSearch = ({ setIdLocation }) => {
 
-    const idLocationValue = useRef()
+  const idLocationValue = useRef()
 
-    const [inputIsEmpty, setInputIsEmpty] = useState(true) 
+  const [inputIsEmpty, setInputIsEmpty] = useState(true)
 
-    const handleSubmit = e => {
-        e.prevenDeafault()
-        const inputValue = idLocationValue.current.value.trim()
+  const handleSubmit = e => {
 
-        if(inputValue === '') {
-          setInputIsEmpty(true)
-          setTimeout(() => {
-            setInputIsEmpty(false)
-          }, 3000)
-        } else {
-          setIdLocation(inputValue)
-        }
+    //aqui estaba mal escrito preventDefault haciendo que se afecta
+    e.preventDefault()
+    const inputValue = idLocationValue.current.value.trim()
+    console.log(inputValue)
+    if (inputValue === '') {
+      setIdLocation(getRandomNumber(126))
+    } else {
+      setIdLocation(inputValue)
     }
+  }
 
   return (
-      <>
-          {
-            inputIsEmpty && <h3>This field is required 👀</h3>
-          }
-          <form onSubmit={handleSubmit}>
-        <input 
+    <>
+      {
+        inputIsEmpty ? <h3>This field is required 👀</h3> : <div></div>
+      }
+      <form onSubmit={handleSubmit}>
+        <input
           placeholder="Enter id location"
-          type="text" 
+          type="text"
           ref={idLocationValue}
         />
-         <button>Search</button>
-        </form>
-      </>
-        
+        <button>Search</button>
+      </form>
+    </>
+
   )
 }
 
